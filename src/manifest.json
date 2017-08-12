@@ -1,0 +1,21 @@
+{
+    "name": "Trojan Tome",
+    "short_name": "Trojan Tome",
+    "icons": [
+        {
+            "src": "assets/icons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "assets/icons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "natural",
+    "start_url": "./?utm_source=web_app_manifest"
+}

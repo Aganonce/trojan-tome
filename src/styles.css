@@ -1,1 +1,479 @@
-/* You can add global styles to this file, and also import other style files */
+/* ============================================================
+  Core CSS
+============================================================ */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: block; 
+}
+
+form {
+    margin: 25px;padding: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+    font: 400 16px/1.4 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #444;
+    letter-spacing: 0.5px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.content-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+  color: #444;
+}
+
+.sideline-title {
+    color: #444;
+    position: fixed;
+    top: 35px;
+    right: 15px;
+    font-size: 18px;
+}
+
+.content-group {
+    width: 100%;
+    color: #444;
+}
+
+.content-center {
+    position: relative;
+    top: 100px;
+    display: block;
+    margin-left: 125px;
+    margin-right: 125px;
+}
+
+@media only screen and (max-width: 768px) {
+    .content-center {
+        position: relative;
+        top: 100px;
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .content-center {
+        position: relative;
+        top: 100px;
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.content-title {
+    font-size: 32px;
+    text-align: center;
+}
+
+.content-body {
+    font-size: 18px;
+    line-height: 34px;
+}
+
+.date {
+    font-style: italic;
+}
+
+/* ============================================================
+  MDL Override CSS
+============================================================ */
+
+.mdl-main-layout-title {
+    font-size: 20pt;
+    color: #444;
+    padding: 0 24px;
+}
+
+.mdl-mobile-group-layout {
+    display: none;
+}
+
+.mdl-mobile-separator {
+    margin-top: 90px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mdl-mobile-group-layout {
+        position: fixed;
+        display: block;
+        background: white;
+        width: 100%;
+        z-index: 5;
+        top: 0px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .mdl-mobile-group-layout {
+        position: fixed;
+        display: block;
+        background: white;
+        width: 100%;
+        z-index: 5;
+        top: 0px;
+    }
+}
+
+.mdl-layout__header-row {
+    position: fixed;
+    background: white;
+    width: 100%;
+    z-index: 5;
+}
+
+@media only screen and (max-width: 768px) {
+    .mdl-main-group-layout {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .mdl-main-group-layout {
+        display: none;
+    }
+}
+
+.mld-menu-button {
+    margin: 15px;
+}
+
+body .mdl-layout__header-row .mdl-navigation__link {
+    color: #444;
+}
+
+body .mdl-layout__header-row {
+    color: #444;
+    padding: 0 80px 0 80px;
+    top: 0px;
+}
+
+/* ============================================================
+  Blog Listing CSS
+============================================================ */
+
+.list-container {
+    /*border-style: solid;*/
+    /*border-color: #000;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.inner-list-container {
+    display: -webkit-inline-box;
+}
+
+.inner-list-title {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.inner-list-circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    font-size: 15px;
+    color: #fff;
+    line-height: 24px;
+    text-align: center;
+    background: #000;
+}
+
+.list-title {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #444;
+    cursor: text;
+}
+
+.list-title-link {
+    font-size: 34px;
+    line-height: 40px;
+    font-weight: 400;
+    color: #444;
+    cursor: pointer;
+}
+
+.list-title-link:hover {
+    text-decoration: underline;
+}
+
+.list-desktop {
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .list-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .list-desktop {
+        display: none;
+    }
+}
+
+.list-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .list-mobile {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .list-mobile {
+        display: block;
+    }
+}
+
+.blog-list-image {
+    display: block;
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
+/* ============================================================
+  Animista CSS
+============================================================ */
+
+.text-focus-in-second {
+	-webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+	        animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) 0.5s both;
+}
+
+.text-focus-in-first {
+	-webkit-animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: text-focus-in 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.tracking-in-expand-fwd {
+	-webkit-animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 1s both;
+}
+
+.swing-in-top-fwd {
+	-webkit-animation: swing-in-top-fwd 1.00s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+	        animation: swing-in-top-fwd 1.00s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+}
+
+.swing-out-top-bck {
+	-webkit-animation: swing-out-top-bck 0.50s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+	        animation: swing-out-top-bck 0.50s cubic-bezier(0.600, -0.280, 0.735, 0.045) both;
+}
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand-fwd {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-transform: translateZ(-700px);
+            transform: translateZ(-700px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation swing-in-top-fwd
+ * ----------------------------------------
+ */
+@-webkit-keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+}
+@keyframes swing-in-top-fwd {
+  0% {
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+}
+
+/**
+ * ----------------------------------------
+ * animation swing-out-top-bck
+ * ----------------------------------------
+ */
+@-webkit-keyframes swing-out-top-bck {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+}
+@keyframes swing-out-top-bck {
+  0% {
+    -webkit-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotateX(-100deg);
+            transform: rotateX(-100deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+}
+
+
+@-webkit-keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes text-focus-in{0%{-webkit-filter:blur(12px);filter:blur(12px);opacity:0}100%{-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes jello-horizontal{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes jello-horizontal{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}30%{-webkit-transform:scale3d(1.25,.75,1);transform:scale3d(1.25,.75,1)}40%{-webkit-transform:scale3d(.75,1.25,1);transform:scale3d(.75,1.25,1)}50%{-webkit-transform:scale3d(1.15,.85,1);transform:scale3d(1.15,.85,1)}65%{-webkit-transform:scale3d(.95,1.05,1);transform:scale3d(.95,1.05,1)}75%{-webkit-transform:scale3d(1.05,.95,1);transform:scale3d(1.05,.95,1)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}
+@-webkit-keyframes flip-horizontal-bottom{0%{-webkit-transform:rotateX(0);transform:rotateX(0)}100%{-webkit-transform:rotateX(-180deg);transform:rotateX(-180deg)}}@keyframes flip-horizontal-bottom{0%{-webkit-transform:rotateX(0);transform:rotateX(0)}100%{-webkit-transform:rotateX(-180deg);transform:rotateX(-180deg)}}
+@-webkit-keyframes text-blur-out{0%{-webkit-filter:blur(.01);filter:blur(.01)}100%{-webkit-filter:blur(12px) opacity(0);filter:blur(12px) opacity(0)}}@keyframes text-blur-out{0%{-webkit-filter:blur(.01);filter:blur(.01)}100%{-webkit-filter:blur(12px) opacity(0);filter:blur(12px) opacity(0)}}
+@-webkit-keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}@keyframes scale-in-center{0%{-webkit-transform:scale(0);transform:scale(0);opacity:1}100%{-webkit-transform:scale(1);transform:scale(1);opacity:1}}
+@-webkit-keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px);transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}@keyframes tracking-in-expand-fwd{0%{letter-spacing:-.5em;-webkit-transform:translateZ(-700px);transform:translateZ(-700px);opacity:0}40%{opacity:.6}100%{-webkit-transform:translateZ(0);transform:translateZ(0);opacity:1}}
+@-webkit-keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}@keyframes swing-in-top-fwd{0%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}100%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}}
+@-webkit-keyframes swing-out-top-bck{0%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}100%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}}@keyframes swing-out-top-bck{0%{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transform-origin:top;transform-origin:top;opacity:1}100%{-webkit-transform:rotateX(-100deg);transform:rotateX(-100deg);-webkit-transform-origin:top;transform-origin:top;opacity:0}}

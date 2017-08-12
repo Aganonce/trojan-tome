@@ -1,0 +1,51 @@
+/* ============================================================
+  Mobile Menu CSS
+============================================================ */
+
+.menu-box {
+    height: 100vh;
+    width: 100vw;
+    /*opacity: 0.95;*/
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    /*background: #3E4EB8;*/
+    background: #fff;
+    text-align: center;
+    z-index: 4;
+}
+
+.settings-grid {
+    text-align: left;
+}
+
+.settings-header {
+    padding-bottom: 74px;
+
+}
+
+.option-text {
+    /*color: white;*/
+    color: #444;
+    font-size: 20px;
+}
+
+.cover-text {
+    padding: 15px;
+}
+
+.opening-header {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.mobile-overflow-text {
+    margin: 0px;
+    overflow: auto;
+    height: 89vh;
+}
+
+.mobile-menu-button {
+    position: absolute;
+    left: 15px;
+}

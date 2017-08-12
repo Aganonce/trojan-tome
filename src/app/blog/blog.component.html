@@ -1,0 +1,22 @@
+<div class="content-body list-desktop">
+  <div class="list-container" *ngFor="let data of routedata; let i = index">
+    <div>
+      <a class="list-title-link" [routerLink]="['/', data.path]">{{ data.title }}</a>
+      <p class="content-body date">{{ data.date }}</p>
+      <br>
+      <img class="blog-list-image" [src]="data.image"/>
+      <br>
+      <p class="content-body">{{ data.description }}</p>
+      <hr>
+    </div>
+  </div>
+</div>
+<div class="content-body list-mobile">
+  <hr>
+  <div class="list-container" *ngFor="let data of routedata; let i = index">
+    <div [routerLink]="['/', data.path]" *ngIf="i <= 99">
+      <span class="inner-list-container"><div class="inner-list-circle" [ngStyle]="{'backgroundColor': data.color}">{{ i + 1 }}</div><p class="inner-list-title" [ngStyle]="{'color': data.color}">{{ data.title }}</p></span>
+      <p>{{ data.description }}</p><p class="date" [ngStyle]="{'color': data.color}">{{ data.date }}</p>
+    </div>
+  </div>
+</div>
