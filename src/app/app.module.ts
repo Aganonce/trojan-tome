@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { DisqusModule } from 'ngx-disqus';
+import { DisqusModule } from './disqus';
 
 import { routing } from './app.routes';
 
@@ -23,7 +23,7 @@ import { BlogComponent } from './blog/blog.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    DisqusModule.forRoot('trojan-tome'),
+    DisqusModule,
     routing
   ],
   providers: [],

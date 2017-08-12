@@ -1,6 +1,11 @@
-# TrojanTome3
+# TrojanTome
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.0.
+## Adding blog posts
+
+To add a post, go to the `blogposts` file and duplicate on of the timestamped files, updating the file name to match the date you wish to post. Make the changes necessary to the `blog.component.html` and `blog.component.css` files in the `blog` file within the new timestamped `blogposts` file. 
+Then go to the `app.routes.ts` file and update the `routes` variable to include a new `path` (which can be anything you want, as long as it pertains to the subject of the new post) and the `loadChildren`, which must lead to the `blogpost.module#BlogpostModule` of the newly timestamped `blogposts` file. 
+Once that is done, go to the `route.service.ts` file and update the `routedata`. The `path` must match the `path` given in the `app.route.ts` file. Then give the new addition a title, date, description, image (for the blog post listings on the home page), and any necessary tags.
+After this is complete, TrojanTome will be able to successfully host the new blog post, lazy-loading it when it is selected.
 
 ## Development server
 
