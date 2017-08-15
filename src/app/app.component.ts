@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/of';
 import 'rxjs/add/operator/share';
@@ -18,7 +19,11 @@ export class AppComponent {
   testClasses: String = 'material-icon hamburger';
   active: Observable<{}>;
 
-  constructor() { }
+  constructor(private router: Router) {
+    router.events.subscribe(() => {
+      window.scrollTo(0, 0);
+    });
+  }
 
   menuClick() {
     if (this.menuVisible) {

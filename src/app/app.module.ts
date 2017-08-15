@@ -8,16 +8,14 @@ import { DisqusModule } from './disqus';
 import { routing } from './app.routes';
 
 import { AppComponent } from './app.component';
-import { WorkComponent } from './work/work.component';
-import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
+import { ArchiveComponent } from './archive/archive.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    WorkComponent,
-    AboutComponent,
-    BlogComponent
+    BlogComponent,
+    ArchiveComponent
   ],
   imports: [
     BrowserModule,

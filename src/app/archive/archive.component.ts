@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 import { RoutesService } from '../shared/services/routes.service';
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css']
+  selector: 'app-archive',
+  templateUrl: './archive.component.html',
+  styleUrls: ['./archive.component.css']
 })
-export class BlogComponent {
+export class ArchiveComponent {
   routedata: any;
 
   constructor(private routeService: RoutesService) {

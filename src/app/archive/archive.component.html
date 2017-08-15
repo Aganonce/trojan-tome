@@ -1,0 +1,13 @@
+<div class="content-body">
+  <div class="list-container">
+    <h3 class="content-header">Archive</h3>
+    <br>
+    <ul>
+    <li class="list-container" *ngFor="let data of routedata; let i = index">
+      <div>
+        <a class="content-body archive-link" [routerLink]="['/', data.path]">{{ data.date }}: {{ data.title }}</a>
+      </div>
+    </li>
+    </ul>
+  </div>
+</div>

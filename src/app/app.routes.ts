@@ -1,15 +1,18 @@
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AboutComponent } from './about/about.component';
-import { WorkComponent } from './work/work.component';
 import { BlogComponent } from './blog/blog.component';
+import { ArchiveComponent } from './archive/archive.component';
 
 // Route Configuration
 export const routes: Routes = [
   {
+    path: '\archive',
+    component: ArchiveComponent
+  },
+  {
     path: '\work',
-    component: WorkComponent
+    loadChildren: './work/work.module#WorkModule'
   },
   {
     path: '',
@@ -17,7 +20,7 @@ export const routes: Routes = [
   },
   {
     path: '\about',
-    component: AboutComponent
+    loadChildren: './about/about.module#AboutModule'
   },
   {
     path: '\hello-world',

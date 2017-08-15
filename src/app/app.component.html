@@ -2,13 +2,13 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title mdl-main-layout-title">Trojan Tome</span>
+      <a class="mdl-layout-title mdl-main-layout-title" [routerLink]="['/']">Trojan Tome</a>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
       <nav class="mdl-navigation">
-        <a class="mdl-navigation-color__link mdl-navigation__link" [routerLink]="['/']">Blog</a>
         <a class="mdl-navigation-color__link mdl-navigation__link" [routerLink]="['/work']">Work</a>
+        <a class="mdl-navigation-color__link mdl-navigation__link" [routerLink]="['/archive']">Archive</a>
         <a class="mdl-navigation-color__link mdl-navigation__link" [routerLink]="['/about']">About</a>
       </nav>
     </div>
@@ -37,6 +37,11 @@
       <div class="mdl-cell mdl-cell--4-col">
         <a class="mdl-button mdl-js-button mdl-js-ripple-effect option-text" [routerLink]="['/work']" (click)="menuClick()">
           Work
+        </a>
+      </div>
+      <div class="mdl-cell mdl-cell--4-col">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect option-text" [routerLink]="['/archive']" (click)="menuClick()">
+          Archive
         </a>
       </div>
       <div class="mdl-cell mdl-cell--4-col">

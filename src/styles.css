@@ -16,6 +16,7 @@ form {
 }
 
 a {
+    outline: none;
     text-decoration: none;
 }
 
@@ -95,14 +96,33 @@ textarea {
     font-style: italic;
 }
 
+.about-image {
+    width: 50%;
+}
+
+.content-header-small {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 40px;
+  color: #444;
+}
+
 /* ============================================================
   MDL Override CSS
 ============================================================ */
 
 .mdl-main-layout-title {
+    outline: none;
     font-size: 20pt;
     color: #444;
     padding: 0 24px;
+    cursor: pointer;
+}
+
+.mdl-main-layout-title:hover {
+    text-decoration: underline;
 }
 
 .mdl-mobile-group-layout {
@@ -160,6 +180,10 @@ textarea {
 
 body .mdl-layout__header-row .mdl-navigation__link {
     color: #444;
+}
+
+.mdl-navigation__link:hover {
+    text-decoration: underline;
 }
 
 body .mdl-layout__header-row {
