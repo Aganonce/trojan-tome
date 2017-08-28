@@ -178,8 +178,13 @@ textarea {
     margin: 15px;
 }
 
-body .mdl-layout__header-row .mdl-navigation__link {
+div .mdl-layout__header-row .mdl-navigation__link {
     color: #444;
+}
+
+body .mdl-layout__header-row .mdl-navigation__link .route-active {
+    color: #ff4081;
+    text-decoration: underline;
 }
 
 .mdl-navigation__link:hover {

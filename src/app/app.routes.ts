@@ -6,28 +6,33 @@ import { ArchiveComponent } from './archive/archive.component';
 
 // Route Configuration
 export const routes: Routes = [
+  { 
+    path: '', 
+    pathMatch: 'full', 
+    redirectTo: 'home' 
+  },
   {
-    path: '\archive',
+    path: 'archive',
     component: ArchiveComponent
   },
   {
-    path: '\work',
+    path: 'work',
     loadChildren: './work/work.module#WorkModule'
   },
   {
-    path: '',
+    path: 'home',
     component: BlogComponent
   },
   {
-    path: '\about',
+    path: 'about',
     loadChildren: './about/about.module#AboutModule'
   },
   {
-    path: '\hello-world',
+    path: 'hello-world',
     loadChildren: './blogposts/2017-08-11/blogpost/blogpost.module#BlogpostModule'
   },
   {
-    path: '\info-topology',
+    path: 'info-topology',
     loadChildren: './blogposts/2017-08-12/blogpost/blogpost.module#BlogpostModule'
   }
 ];

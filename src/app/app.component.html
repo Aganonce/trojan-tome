@@ -2,14 +2,15 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <a class="mdl-layout-title mdl-main-layout-title" [routerLink]="['/']">Trojan Tome</a>
+      <a class="mdl-layout-title mdl-main-layout-title" [routerLink]="['/home']">Trojan Tome</a>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
       <nav class="mdl-navigation">
-        <a class="mdl-navigation-color__link mdl-navigation__link" [routerLink]="['/work']">Work</a>
-        <a class="mdl-navigation-color__link mdl-navigation__link" [routerLink]="['/archive']">Archive</a>
-        <a class="mdl-navigation-color__link mdl-navigation__link" [routerLink]="['/about']">About</a>
+        <a class="mdl-navigation-color__link mdl-navigation__link" [routerLink]="['/home']" [routerLinkActive]="'route-active'">Blog</a>
+        <a class="mdl-navigation-color__link mdl-navigation__link" [routerLink]="['/work']" [routerLinkActive]="'route-active'">Work</a>
+        <a class="mdl-navigation-color__link mdl-navigation__link" [routerLink]="['/archive']" [routerLinkActive]="'route-active'">Archive</a>
+        <a class="mdl-navigation-color__link mdl-navigation__link" [routerLink]="['/about']" [routerLinkActive]="'route-active'">About</a>
       </nav>
     </div>
   </div>
@@ -30,7 +31,7 @@
   <div class="settings-grid">
     <div class="mdl-grid">
       <div class="mdl-cell mdl-cell--4-col">
-        <a class="mdl-button mdl-js-button mdl-js-ripple-effect option-text" [routerLink]="['/']" (click)="menuClick()">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect option-text" [routerLink]="['/home']" (click)="menuClick()">
           Blog
         </a>
       </div>
